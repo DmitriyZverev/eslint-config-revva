@@ -1,0 +1,11 @@
+{
+  "extends": "./index.js",
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "quote-props": "off",
+    "quotes": "off"
+  }
+}
