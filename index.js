@@ -1,5 +1,5 @@
 /**
- * Правила для ESLint v3.12
+ * Правила для ESLint
  */
 module.exports = {
   extends: [

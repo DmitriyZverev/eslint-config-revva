@@ -11,6 +11,10 @@ module.exports = {
     // http://eslint.org/docs/rules/no-await-in-loop
     "no-await-in-loop": "error",
 
+    // запретить сравнение с -0
+    // http://eslint.org/docs/rules/no-compare-neg-zero
+    "no-compare-neg-zero": "error",
+
     // запретить присвоения переменных в условных операторах
     // http://eslint.org/docs/rules/no-cond-assign
     "no-cond-assign": [

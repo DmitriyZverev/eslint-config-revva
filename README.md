@@ -1,24 +1,22 @@
-# **Конфигурация для ESLint** #
+#**Конфигурация для ESLint**
 
-0.1.0
+0.2.0
+
+Поддерживаемая версия ESLint >= 3.17
 
 ***
 
-## Установка ##
+##**Установка**
 
-```
-#!bash
-
-npm install --save-dev git+ssh://git@bitbucket.org:revvateam/eslint-config-revva.git#0.1.0
+```bash
+npm i --save-dev git+ssh://git@github.com:DmitriyZverev/eslint-config-revva.git
 ```
 
-
-## Использование ##
+##**Использование**
 
 В файле .eslintrc прописать:
 
-```
-#!json
+```json
 {
   "extends": "revva"
 }
@@ -26,8 +24,7 @@ npm install --save-dev git+ssh://git@bitbucket.org:revvateam/eslint-config-revva
 
 Для использования в БЭМ проектах:
 
-```
-#!json
+```json
 {
   "extends": "revva/bem"
 }

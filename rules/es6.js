@@ -164,6 +164,10 @@ module.exports = {
       }
     ],
 
+    // рекомендовать деструктуризацию из массивов и объектов
+    // http://eslint.org/docs/rules/prefer-destructuring
+    "prefer-destructuring": "off",
+
     // запретить parseInt() в пользу двоичных восьмиричных и шестнадцатеричных
     // литералов
     // http://eslint.org/docs/rules/prefer-numeric-literals
