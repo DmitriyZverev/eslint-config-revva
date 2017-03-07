@@ -326,6 +326,10 @@ module.exports = {
     // http://eslint.org/docs/rules/no-with
     "no-with": "error",
 
+    // требовать передачу экземпляра ошибки в функцию reject() Промиса
+    // http://eslint.org/docs/rules/prefer-promise-reject-errors
+    "prefer-promise-reject-errors": "error",
+
     // требовать использование второго параметра для parseInt()
     // http://eslint.org/docs/rules/radix
     "radix": "error",

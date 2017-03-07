@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-revva",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "eslint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "~3.12.2"
+    "eslint": "3.17.x"
   }
 }

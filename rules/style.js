@@ -408,6 +408,10 @@ module.exports = {
       "never"
     ],
 
+    // обеспечить соблюдение расположения однострочных операторов
+    // http://eslint.org/docs/rules/nonblock-statement-body-position
+    "nonblock-statement-body-position": "off",
+
     // обеспечить соблюдение согласованных разрывы строк внутри скобок
     // http://eslint.org/docs/rules/object-curly-newline
     "object-curly-newline": "off",
@@ -544,6 +548,14 @@ module.exports = {
     // требовать или запретить пробел в начале комментария перед /* или //
     // http://eslint.org/docs/rules/spaced-comment
     "spaced-comment": [
+      "error",
+      "always"
+    ],
+
+    // require or disallow spacing between template tags and their literals
+    // требовать или запретить пробелы между тегами шаблона и их литералами
+    // http://eslint.org/docs/rules/template-tag-spacing
+    "template-tag-spacing": [
       "error",
       "always"
     ],
