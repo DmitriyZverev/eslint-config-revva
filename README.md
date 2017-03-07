@@ -9,7 +9,7 @@
 ##**Установка**
 
 ```bash
-npm i --save-dev git+ssh://git@bitbucket.org:revvateam/eslint-config-revva.git#0.2.0
+npm i --save-dev git+ssh://git@github.com:DmitriyZverev/eslint-config-revva.git
 ```
 
 ##**Использование**
