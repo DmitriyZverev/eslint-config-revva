@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-revva",
   "description": "ESLint configuration",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": {
     "name": "Dmitriy Zverev",
