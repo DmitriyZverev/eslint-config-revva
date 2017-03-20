@@ -1,18 +1,16 @@
-#**Конфигурация для ESLint**
+# **Конфигурация для ESLint**
 
 0.2.0
 
 Поддерживаемая версия ESLint >= 3.17
 
-***
-
-##**Установка**
+## **Установка**
 
 ```bash
-npm i --save-dev git+ssh://git@github.com:DmitriyZverev/eslint-config-revva.git
+npm i --save-dev eslint eslint-config-revva
 ```
 
-##**Использование**
+## **Использование**
 
 В файле .eslintrc прописать:
 
