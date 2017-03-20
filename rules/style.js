@@ -136,7 +136,7 @@ module.exports = {
     // http://eslint.org/docs/rules/jsx-quotes
     "jsx-quotes": [
       "error",
-      "prefer-single" // одинарные кавычки
+      "prefer-double"
     ],
 
     // обеспечить пробелы между ключами и значениями в объектах

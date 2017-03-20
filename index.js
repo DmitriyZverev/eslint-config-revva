@@ -11,7 +11,7 @@ module.exports = {
     './rules/style.js',
     './rules/vars.js'
   ].map(require.resolve),
-  globals: {
+  env: {
     browser: true
   }
 };
