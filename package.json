@@ -1,10 +1,37 @@
 {
   "name": "eslint-config-revva",
+  "description": "ESLint configuration",
   "version": "0.2.0",
+  "license": "MIT",
+  "author": {
+    "name": "Dmitriy Zverev",
+    "email": "zver.lockon@mail.ru"
+  },
+  "homepage": "https://github.com/DmitriyZverev/eslint-config-revva",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DmitriyZverev/eslint-config-revva.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DmitriyZverev/eslint-config-revva/issues",
+    "email": "zver.lockon@mail.ru"
+  },
+  "keywords": [
+    "eslint",
+    "lint"
+  ],
+  "files": [
+    "index.js",
+    "bem.js",
+    "rules"
+  ],
   "scripts": {
     "eslint": "eslint ."
   },
   "devDependencies": {
     "eslint": "3.17.x"
+  },
+  "peerDependencies": {
+    "eslint": "3.x"
   }
 }
