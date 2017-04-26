@@ -1,13 +1,13 @@
 # **Конфигурация для ESLint**
 
-0.3.0
+0.4.0
 
 Поддерживаемая версия ESLint >= 3.17
 
 ## **Установка**
 
 ```bash
-npm i --save-dev eslint eslint-config-revva
+npm i --save-dev eslint eslint-config-revva eslint-plugin-react
 ```
 
 ## **Использование**
