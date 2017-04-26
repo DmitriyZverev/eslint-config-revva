@@ -7,6 +7,7 @@ module.exports = {
     './rules/errors.js',
     './rules/es6.js',
     './rules/node.js',
+    './rules/react.js',
     './rules/strict.js',
     './rules/style.js',
     './rules/vars.js'
