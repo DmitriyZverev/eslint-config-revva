@@ -7,6 +7,10 @@
 module.exports = {
   "rules": {
 
+    // обеспечить цикл "for" перемещением счетчика в верном направлении
+    // http://eslint.org/docs/rules/for-direction
+    "for-direction": "error",
+
     // запретить использовать await внутри циклов
     // http://eslint.org/docs/rules/no-await-in-loop
     "no-await-in-loop": "error",

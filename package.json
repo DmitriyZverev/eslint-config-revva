@@ -29,10 +29,10 @@
     "eslint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^3.17.0"
+    "eslint": "^4.1.1"
   },
   "peerDependencies": {
-    "eslint": "^3.17.0",
-    "eslint-plugin-react": "^6.10.0"
+    "eslint": "^4.1.1",
+    "eslint-plugin-react": "^7.1.0"
   }
 }
