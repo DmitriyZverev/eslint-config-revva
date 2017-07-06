@@ -7,12 +7,20 @@
 module.exports = {
   "rules": {
 
+    // обеспечить перенос строки после открытия и перед закрытием скобок массива
+    // http://eslint.org/docs/rules/array-bracket-newline
+    "array-bracket-newline": "off",
+
     // обеспечить пробелы внутри скобок массива
     // http://eslint.org/docs/rules/array-bracket-spacing
     "array-bracket-spacing": [
       "error",
       "never" // никогда
     ],
+
+    // обеспечить перенос строк после каждого элемента массива
+    // http://eslint.org/docs/rules/array-element-newline
+    "array-element-newline": "off",
 
     // обеспечить пробелы внутри скобок блока раположенного в одну строку
     // http://eslint.org/docs/rules/block-spacing
@@ -128,7 +136,10 @@ module.exports = {
     // http://eslint.org/docs/rules/indent
     "indent": [
       "error",
-      2
+      2,
+      {
+        "SwitchCase": 1 // Отступ внутри блока switch
+      }
     ],
 
     // указать, следует ли использовать двойные или одинарные кавычки в
@@ -380,13 +391,7 @@ module.exports = {
 
     // запретить нижнее подчеркивание в идентификаторах
     // http://eslint.org/docs/rules/no-underscore-dangle
-    "no-underscore-dangle": [
-      "error",
-      {
-        "allowAfterThis": false, // разрешить после this
-        "allowAfterSuper": true // разрешить после super
-      }
-    ],
+    "no-underscore-dangle": "off",
 
     // запретить тройные операторы, когда существуют более простые альтернативы
     // http://eslint.org/docs/rules/no-unneeded-ternary
@@ -462,6 +467,10 @@ module.exports = {
       "never"
     ],
 
+    // Требовать или запрещать отступы между утверждениями
+    // http://eslint.org/docs/rules/padding-line-between-statements
+    "padding-line-between-statements ": "off",
+
     // требовать кавычки вокруг имен свойств объектов
     // http://eslint.org/docs/rules/quote-props
     "quote-props": [
@@ -498,6 +507,13 @@ module.exports = {
         "before": false,
         "after": true
       }
+    ],
+
+    // обеспечить расположение точек с запятой
+    // http://eslint.org/docs/rules/semi-style
+    "semi-style": [
+      "error",
+      "last" // в конце строки
     ],
 
     // требовать сортировки ключей объекта
@@ -550,6 +566,16 @@ module.exports = {
     "spaced-comment": [
       "error",
       "always"
+    ],
+
+    // Обеспечить интервал вокруг двоеточий операторов switch
+    // http://eslint.org/docs/rules/switch-colon-spacing
+    "switch-colon-spacing": [
+      "error",
+      {
+        "after": true, // пробел после оператора
+        "before": false // пробел перед оператором
+      }
     ],
 
     // require or disallow spacing between template tags and their literals

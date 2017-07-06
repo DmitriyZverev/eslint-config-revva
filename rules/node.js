@@ -25,6 +25,10 @@ module.exports = {
     // http://eslint.org/docs/rules/handle-callback-err
     "handle-callback-err": "off",
 
+    // запретить использовать конструктор для Buffer
+    // http://eslint.org/docs/rules/no-buffer-constructor
+    "no-buffer-constructor": "error",
+
     // запретить смешивание регулярных перменных и деклараций require
     // http://eslint.org/docs/rules/no-mixed-requires
     "no-mixed-requires": "off",

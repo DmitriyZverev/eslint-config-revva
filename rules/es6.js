@@ -27,14 +27,7 @@ module.exports = {
     // не использовать фигурные скобки в стрелочных функциях там, где они могут
     // быть пропущены
     // http://eslint.org/docs/rules/arrow-body-style
-    "arrow-body-style": [
-      "error",
-      "as-needed", // если необходимо
-      {
-        "requireReturnForObjectLiteral": false // требовать указания return если
-                                               // возвращается литерал объекта
-      }
-    ],
+    "arrow-body-style": "off",
 
     // требовать скобки вокруг аргументов в стрелочных функциях
     // http://eslint.org/docs/rules/arrow-parens

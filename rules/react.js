@@ -20,6 +20,15 @@ module.exports = {
 
   "rules": {
 
+    // Обеспечить последовательное именование свойств булева типа
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
+    "react/boolean-prop-naming": "off",
+
+    // Обеспечить для каждого свойства указанного в defaultProps соответствующее
+    // необязательное свойство в propTypes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
+    "react/default-props-match-prop-types": "error",
+
     // Предотвратить отсутствие отображаемого имени при определении компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
     "react/display-name": "off",
@@ -34,16 +43,7 @@ module.exports = {
 
     // Запретить определенные типы свойств компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
-    "react/forbid-prop-types": [
-      "error",
-      {
-        "forbid": [
-          "any",
-          "array",
-          "object"
-        ]
-      }
-    ],
+    "react/forbid-prop-types": "off",
 
     // Запретить импорт внешних типов свойств компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
@@ -62,6 +62,10 @@ module.exports = {
       "error",
       "line-aligned" // Должен быть выровнен с открывающий скобкой тега.
     ],
+
+    // Проверять местоположение закрывающего тега в JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
+    "react/jsx-closing-tag-location": "error",
 
     // Требовать или запретить пробелы внутри фигурных скобок в аттрибутах JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
@@ -88,8 +92,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
     "react/jsx-first-prop-new-line": [
       "error",
-      "multiline" // Первое свойство должно располагаться на новой строке,
-                  // если тег JSX занимает несколько строк.
+      "multiline" // Первое свойство должно располагаться на новой строке, если тег JSX занимает несколько строк.
     ],
 
     // Обеспечить использование соглашения об именах обработчиков событий
@@ -169,11 +172,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     "react/jsx-sort-props": "off",
 
-    // Требовать или запретить пробел перед закрытием тега в самозакрывающихся
-    // JSX элементах
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
-    "react/jsx-space-before-closing": ["error", "never"],
-
     // Проверять пробелы в открывающих и закрывающих скобках JSX и вокруг них
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
     "react/jsx-tag-spacing": [
@@ -206,7 +204,7 @@ module.exports = {
 
     // Запретить использовать индекс массива в ключах компонентов
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
-    "react/no-array-index-key": "error",
+    "react/no-array-index-key": "off",
 
     // Запретить передавать childen как свойство
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
@@ -253,6 +251,11 @@ module.exports = {
       }
     ],
 
+    // Запретить использование shouldComponentUpdate при наследовании
+    // от React.PureComponent
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
+    "react/no-redundant-should-component-update": "error",
+
     // Запретить использование возвращаемых значений
     // от React.render()/ReactDOM.render()
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
@@ -278,6 +281,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
     "react/no-unused-prop-types": "error",
 
+    // Запретить использование setState() в методе componentWillUpdate()
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
+    "react/no-will-update-set-state": "error",
+
     // Требовать объявление класса компонента в ES6 стиле
     // заместо React.createClass()
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
@@ -291,8 +298,7 @@ module.exports = {
     "react/prefer-stateless-function": [
       "error",
       {
-        "ignorePureComponents": true // игнорировать компоненты наследуемые
-                                     // от React.PureComponent
+        "ignorePureComponents": true // игнорировать компоненты наследуемые от React.PureComponent
       }
     ],
 
