@@ -20,6 +20,15 @@ module.exports = {
 
   "rules": {
 
+    // Обеспечить последовательное именование свойств булева типа
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
+    "react/boolean-prop-naming": "off",
+
+    // Обеспечить для каждого свойства указанного в defaultProps соответствующее
+    // необязательное свойство в propTypes
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
+    "default-props-match-prop-types": "error",
+
     // Предотвратить отсутствие отображаемого имени при определении компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
     "react/display-name": "off",
@@ -62,6 +71,10 @@ module.exports = {
       "error",
       "line-aligned" // Должен быть выровнен с открывающий скобкой тега.
     ],
+
+    // Проверять местоположение закрывающего тега в JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
+    "react/jsx-closing-tag-location": "error",
 
     // Требовать или запретить пробелы внутри фигурных скобок в аттрибутах JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
@@ -252,6 +265,11 @@ module.exports = {
       }
     ],
 
+    // Запретить использование shouldComponentUpdate при наследовании
+    // от React.PureComponent
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
+    "react/no-redundant-should-component-update": "error",
+
     // Запретить использование возвращаемых значений
     // от React.render()/ReactDOM.render()
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
@@ -276,6 +294,10 @@ module.exports = {
     // Запретить объявление неиспользуемых типов свойств
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
     "react/no-unused-prop-types": "error",
+
+    // Запретить использование setState() в методе componentWillUpdate()
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
+    "react/no-will-update-set-state": "error",
 
     // Требовать объявление класса компонента в ES6 стиле
     // заместо React.createClass()
