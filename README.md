@@ -10,6 +10,12 @@
 npm i --save-dev eslint eslint-config-revva eslint-plugin-react
 ```
 
+При использовании React так же необходимо установить плагин `eslint-plugin-react`:
+
+```bash
+npm i --save-dev eslint-plugin-react
+```
+
 ## **Использование**
 
 В файле .eslintrc прописать:
@@ -25,5 +31,13 @@ npm i --save-dev eslint eslint-config-revva eslint-plugin-react
 ```json
 {
   "extends": "revva/bem"
+}
+```
+
+Для использования в React проектах:
+
+```json
+{
+  "extends": "revva/react"
 }
 ```
