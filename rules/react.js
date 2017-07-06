@@ -27,7 +27,7 @@ module.exports = {
     // Обеспечить для каждого свойства указанного в defaultProps соответствующее
     // необязательное свойство в propTypes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
-    "default-props-match-prop-types": "error",
+    "react/default-props-match-prop-types": "error",
 
     // Предотвратить отсутствие отображаемого имени при определении компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
@@ -43,16 +43,7 @@ module.exports = {
 
     // Запретить определенные типы свойств компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
-    "react/forbid-prop-types": [
-      "error",
-      {
-        "forbid": [
-          "any",
-          "array",
-          "object"
-        ]
-      }
-    ],
+    "react/forbid-prop-types": "off",
 
     // Запретить импорт внешних типов свойств компонента
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
@@ -181,11 +172,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     "react/jsx-sort-props": "off",
 
-    // Требовать или запретить пробел перед закрытием тега в самозакрывающихся
-    // JSX элементах
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
-    "react/jsx-space-before-closing": ["error", "never"],
-
     // Проверять пробелы в открывающих и закрывающих скобках JSX и вокруг них
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
     "react/jsx-tag-spacing": [
@@ -218,7 +204,7 @@ module.exports = {
 
     // Запретить использовать индекс массива в ключах компонентов
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
-    "react/no-array-index-key": "error",
+    "react/no-array-index-key": "off",
 
     // Запретить передавать childen как свойство
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md

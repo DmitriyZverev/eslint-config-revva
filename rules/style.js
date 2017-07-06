@@ -9,12 +9,7 @@ module.exports = {
 
     // обеспечить перенос строки после открытия и перед закрытием скобок массива
     // http://eslint.org/docs/rules/array-bracket-newline
-    "array-bracket-newline": [
-      "error",
-      {
-        "multiline": true // требовать только если массив многострочный
-      }
-    ],
+    "array-bracket-newline": "off",
 
     // обеспечить пробелы внутри скобок массива
     // http://eslint.org/docs/rules/array-bracket-spacing
@@ -141,7 +136,10 @@ module.exports = {
     // http://eslint.org/docs/rules/indent
     "indent": [
       "error",
-      2
+      2,
+      {
+        "SwitchCase": 1 // Отступ внутри блока switch
+      }
     ],
 
     // указать, следует ли использовать двойные или одинарные кавычки в
@@ -393,13 +391,7 @@ module.exports = {
 
     // запретить нижнее подчеркивание в идентификаторах
     // http://eslint.org/docs/rules/no-underscore-dangle
-    "no-underscore-dangle": [
-      "error",
-      {
-        "allowAfterThis": false, // разрешить после this
-        "allowAfterSuper": true // разрешить после super
-      }
-    ],
+    "no-underscore-dangle": "off",
 
     // запретить тройные операторы, когда существуют более простые альтернативы
     // http://eslint.org/docs/rules/no-unneeded-ternary
