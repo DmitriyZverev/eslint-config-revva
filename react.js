@@ -4,6 +4,6 @@
 module.exports = {
   extends: [
     './index.js',
-    './rules/react.js',
-  ].map(require.resolve),
+    './rules/react.js'
+  ].map(require.resolve)
 };

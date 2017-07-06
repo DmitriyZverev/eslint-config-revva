@@ -31,8 +31,7 @@ module.exports = {
       "error",
       "as-needed", // если необходимо
       {
-        "requireReturnForObjectLiteral": false // требовать указания return если
-                                               // возвращается литерал объекта
+        "requireReturnForObjectLiteral": false // требовать указания return если возвращается литерал объекта
       }
     ],
 

@@ -145,7 +145,6 @@ module.exports = {
       "error",
       {
         "requireStringLiterals": true // только верный строковый литерал
-                                      // или иной typeof
       }
     ]
 

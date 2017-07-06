@@ -88,8 +88,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
     "react/jsx-first-prop-new-line": [
       "error",
-      "multiline" // Первое свойство должно располагаться на новой строке,
-                  // если тег JSX занимает несколько строк.
+      "multiline" // Первое свойство должно располагаться на новой строке, если тег JSX занимает несколько строк.
     ],
 
     // Обеспечить использование соглашения об именах обработчиков событий
@@ -291,8 +290,7 @@ module.exports = {
     "react/prefer-stateless-function": [
       "error",
       {
-        "ignorePureComponents": true // игнорировать компоненты наследуемые
-                                     // от React.PureComponent
+        "ignorePureComponents": true // игнорировать компоненты наследуемые от React.PureComponent
       }
     ],
 
