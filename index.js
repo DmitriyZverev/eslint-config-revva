@@ -9,9 +9,9 @@ module.exports = {
     './rules/node.js',
     './rules/strict.js',
     './rules/style.js',
-    './rules/vars.js'
+    './rules/vars.js',
   ].map(require.resolve),
   env: {
-    browser: true
-  }
+    browser: true,
+  },
 };
