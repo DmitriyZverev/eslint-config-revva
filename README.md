@@ -1,15 +1,13 @@
 # **Конфигурация для ESLint**
 
-0.5.0
-
-**ВНИМАНИЕ! конфигурация в стадии разработки, при смене версии обратная совместимость не гарантируется.**
+1.0.0
 
 Поддерживаемая версия ESLint >= 4.1.1
 
 ## **Установка**
 
 ```bash
-npm i --save-dev eslint eslint-config-revva eslint-plugin-react
+npm i --save-dev eslint eslint-config-revva
 ```
 
 При использовании React так же необходимо установить плагин `eslint-plugin-react`:
@@ -25,14 +23,6 @@ npm i --save-dev eslint-plugin-react
 ```json
 {
   "extends": "revva"
-}
-```
-
-Для использования в БЭМ проектах:
-
-```json
-{
-  "extends": "revva/bem"
 }
 ```
 

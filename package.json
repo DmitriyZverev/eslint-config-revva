@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-revva",
-  "description": "ESLint configuration",
-  "version": "0.5.0",
+  "description": "Personal ESLint configuration",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Dmitriy Zverev",
@@ -16,13 +16,15 @@
     "url": "https://github.com/DmitriyZverev/eslint-config-revva/issues",
     "email": "zver.lockon@mail.ru"
   },
+  "engines": {
+    "npm": ">=5.0"
+  },
   "keywords": [
     "eslint",
     "lint"
   ],
   "files": [
     "index.js",
-    "bem.js",
     "react.js",
     "rules"
   ],
