@@ -28,14 +28,6 @@ npm i --save-dev eslint-plugin-react
 }
 ```
 
-Для использования в БЭМ проектах:
-
-```json
-{
-  "extends": "revva/bem"
-}
-```
-
 Для использования в React проектах:
 
 ```json
